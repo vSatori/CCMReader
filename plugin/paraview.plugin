@@ -1,0 +1,6 @@
+NAME
+  CCMReader
+DESCRIPTION
+  Reader for ccm file.
+REQUIRES_MODULES
+  VTK::CommonCore
