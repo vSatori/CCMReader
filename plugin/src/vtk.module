@@ -1,0 +1,9 @@
+NAME
+  VTK::IOCCM
+ LIBRARY_NAME
+  vtkIOCCM
+DEPENDS
+  VTK::CommonExecutionModel
+PRIVATE_DEPENDS
+  VTK::CommonCore
+  

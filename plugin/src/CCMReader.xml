@@ -1,0 +1,29 @@
+<ParaViewPlugin>
+    <ServerManagerConfiguration>
+        <ProxyGroup name="sources">
+            <SourceProxy name="CCMReader" class="vtkCCMReader" label="ccm">
+
+                <Documentation long_help="Read ccm files of StarCCM." short_help="Read ccm files">
+                    Loads and parses ccm files into ParaView.
+                </Documentation>
+
+                <StringVectorProperty
+                        name="FileName"
+                        animateable="0"
+                        command="SetFileName"
+                        number_of_elements="1"
+                        panel_visibility="never">
+                    <FileListDomain name="files"/>
+                    <Documentation>
+                        This property specifies the file name for the ccm reader.
+                    </Documentation>
+                </StringVectorProperty>
+
+                <Hints>
+                    <ReaderFactory extensions="ccm" file_description="StarCCM files" />
+                </Hints>
+
+            </SourceProxy>
+        </ProxyGroup>
+    </ServerManagerConfiguration>
+</ParaViewPlugin>
